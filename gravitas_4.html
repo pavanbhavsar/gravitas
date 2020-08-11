@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ISRO</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+        }
+        body
+        {
+            height: 610px;
+            width: 100%;
+
+        }
+        img
+        {
+            height: 250px;
+            width: 250px;
+        }
+        .imgbox
+        {
+            position: absolute;
+            top: 150px;
+            left: 700px;
+        }
+        .heading
+        {
+            position: absolute;
+            top:180px;
+            left: 400px;
+
+            font-family: Verdana;
+            font-size: 25px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #32343A;
+
+
+            animation-name: animate1;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+
+        }
+
+        @keyframes animate1 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                left: 440px;
+                letter-spacing: 1px;
+            }
+
+            25%
+            {
+                opacity: 0.25;
+                visibility: visible;
+                left: 430px;
+
+            }
+
+            50%
+            {
+                opacity: 0.5;
+                visibility: visible;
+                left: 420px;
+                letter-spacing: 2px;
+            }
+
+            75%
+            {
+                opacity: 0.75;
+                visibility: visible;
+                left: 410px;
+            }
+            100%
+            {
+                opacity: 1;
+                visibility: visible;
+                left: 400px;
+                letter-spacing: 3px;
+            }
+        }
+
+        .partition1
+        {
+            position: absolute;
+            height: 4px;
+            width: 30px;
+            background: #f47216;
+            top:194px;
+            left: 610px;
+            transform: rotate(90deg);
+            border-radius: 10px;
+
+            box-shadow: 0 0 10px #f47216,0 0 40px #f47216,0 0  80px #f47216;
+
+            animation-name: animate4;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+        @keyframes animate4 {
+            0%
+            {
+                box-shadow: 0 0 2px #f47216,0 0 10px #f47216,0 0  15px #f47216;
+                opacity: 0.1;
+            }
+
+            30%
+            {
+                box-shadow:none;
+                opacity: 0.3;
+            }
+
+            60%
+            {
+                box-shadow: 0 0 2px #f47216,0 0 10px #f47216,0 0  15px #f47216;
+                opacity: 0.5;
+            }
+
+            80%
+            {
+                box-shadow: none;
+            }
+            95%
+            {
+                box-shadow: 0 0 10px #f47216,0 0 40px #f47216,0 0  80px #f47216;
+            }
+        }
+
+
+        .content
+        {
+            position: absolute;
+            text-align: right;
+
+            top: 260px;
+            left: 200px;
+            color: #404341;
+
+            font-weight: bold;
+            font-family: Verdana;
+            font-size: 18px;
+            line-height: 40px;
+
+            animation-name: animate2;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+
+        @keyframes animate2 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                left: 225px;
+            }
+
+            25%
+            {
+                opacity: 0.25;
+                visibility: visible;
+                left: 220px;
+
+            }
+
+            50%
+            {
+                opacity: 0.5;
+                visibility: visible;
+                left: 215px;
+
+            }
+
+            75%
+            {
+                opacity: 0.75;
+                visibility: visible;
+                left: 210px;
+            }
+            100%
+            {
+                opacity: 1;
+                visibility: visible;
+                left: 200px;
+
+            }
+        }
+
+        .partition2
+        {
+            position: absolute;
+            width: 200px;
+            height: 4px;
+            background: #0e88d3;
+            border-radius: 10px;
+
+
+            left: 527px;
+            top:360px;
+            transform: rotate(90deg);
+            box-shadow: 0 0 10px #0e88d3,0 0 40px #0e88d3,0 0  80px #0e88d3;
+
+            animation-name: animate3;
+            animation-duration: 1s;
+            animation-delay: 4s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+        @keyframes animate3 {
+            0%
+            {
+                box-shadow: 0 0 2px #0e88d3,0 0 10px #0e88d3,0 0  15px #0e88d3;
+                opacity: 0.1;
+            }
+
+            30%
+            {
+                box-shadow:none;
+                opacity: 0.3;
+            }
+
+            60%
+            {
+                box-shadow: 0 0 2px #0e88d3,0 0 10px #0e88d3,0 0  15px #0e88d3;
+                opacity: 0.5;
+            }
+
+            80%
+            {
+                box-shadow: none;
+            }
+            95%
+            {
+                box-shadow: 0 0 10px #0e88d3,0 0 40px #0e88d3,0 0  80px #0e88d3;
+            }
+        }
+
+        .title {
+            position: absolute;
+            color: #1D1E2C;
+            top: 120px;
+            left: 68px;
+            font-size: 18em;
+            letter-spacing: 95px;
+            opacity: 0.08;
+            font-family: Verdana;
+            font-weight: bold;
+
+            animation-name: animate6;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+
+        }
+
+        @keyframes animate6 {
+
+            0%
+            {
+                opacity: 0.01;
+            }
+            25%
+            {
+                opacity: 0.02;
+            }
+
+            50%
+            {
+                opacity: 0.03;
+            }
+            75%
+            {
+                opacity: 0.06 ;
+            }
+        }
+        .square1
+        {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #f47216;
+            top:40px;
+            left: 40px;
+
+            animation-name: animate5;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes animate5 {
+            0%,50%
+            {
+                transform: rotate(360deg);
+            }
+
+        }
+
+
+
+        .square2 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            box-sizing: border-box;
+            border: 2px solid #0e88d3;
+
+            top: 60px;
+            left: 60px;
+
+            opacity: 0.8;
+
+
+        }
+
+        .square3 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            box-sizing: border-box;
+            border: 2px solid #f47216;
+
+            top: 530px;
+            left: 1180px;
+
+            opacity: 0.8;
+            animation-name: animate5;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .square4
+        {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #0e88d3;
+            top:550px;
+            left: 1200px;
+            z-index: -1;
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="imgbox">
+    <img src="isro.png">
+</div>
+
+<div class="partition1"></div>
+<div class="partition2"></div>
+
+<div class="heading">
+    MANGALYAN
+</div>
+
+<div class="content">
+    <p>The Mars Orbiter Mission also known as<br>Mangalyaan,is a space probe orbiting <br>
+    Mars since 24th september 2014.<br>It was launched on 5th Nov 2013 by <br>Indian Space
+    research Organisation.</p>
+</div>
+
+<div class="square1"></div>
+<div class="square2"></div>
+<div class="square3"></div>
+<div class="square4"></div>
+<div class="title">
+    ISRO
+</div>
+</body>
+</html>

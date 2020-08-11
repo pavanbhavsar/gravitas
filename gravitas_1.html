@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GRAVITAS</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            height: 610px;
+            background: black;
+            width: 100%;
+        }
+        img
+        {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+        }
+
+
+        .imgbox
+        {
+            position: absolute;
+            top:135px;
+            left: 650px;
+
+
+            animation-name: animate6;
+            animation-duration: 1.5s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+
+        @keyframes animate6 {
+            0%
+            {
+                left: 480px;
+            }
+
+
+            20%
+            {
+                left:520px ;
+            }
+
+            40%
+            {
+                left: 560px;
+            }
+
+            60%
+            {
+                left: 580px;
+            }
+
+            80%
+            {
+                left: 620px;
+            }
+        }
+        .heading
+        {
+            position: absolute;
+            color: #CC2D21;
+            font-family: Verdana;
+            font-size: 30px;
+            font-weight: bold;
+            top: 25px;
+            left: 53px;
+        }
+        .heading2
+        {
+            position: absolute;
+            color: #E3E3E3;
+            font-family: Calibri;
+            font-weight: bold;
+            font-size:20px ;
+            letter-spacing: 4px;
+            left: 100px;
+            top: 35px;
+
+            animation-name: animate2;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+
+        @keyframes animate2 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                left: 40px;
+            }
+            30%
+            {
+                opacity: 0;
+                visibility: hidden;
+                left: 50px;
+            }
+            60%
+            {
+                opacity: 0;
+                visibility: visible;
+                left: 70px;
+            }
+           70%
+           {
+               opacity: 0.3;
+               visibility: visible;
+           }
+
+            80%
+            {
+                opacity: 0.5;
+                visibility: visible;
+            }
+            95%
+            {
+                opacity: 0.7;
+                visibility: visible;
+            }
+        }
+
+        .partition
+        {
+            position: absolute;
+            top: 45px;
+            background: #E3E3E3;
+            left: 62px;
+            height: 3px;
+            width: 50px;
+            transform:rotate(90deg);
+            box-shadow: 0 0 10px #E3E3E3,0 0 40px #E3E3E3,0 0  80px #E3E3E3;
+            border-radius: 10px;
+
+
+            animation-name: animate7;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-delay: 5s;
+        }
+        @keyframes animate7 {
+            0%
+            {
+                opacity: 0.1;
+                box-shadow: 0 0 2px #E3E3E3,0 0 10px #E3E3E3,0 0  15px #E3E3E3;
+            }
+            30%
+            {
+                box-shadow:none;
+                opacity: 0.3;
+            }
+
+            60%
+            {
+                box-shadow: 0 0 2px #E3E3E3,0 0 10px #E3E3E3,0 0  15px #E3E3E3;
+                opacity: 0.5;
+            }
+
+            80%
+            {
+                box-shadow: none;
+            }
+            95%
+            {
+                box-shadow: 0 0 10px #E3E3E3,0 0 40px #E3E3E3,0 0  80px #E3E3E3;
+            }
+        }
+
+
+
+        .partition2
+        {
+            position: absolute;
+            background: #E3E3E3;
+            height: 3px;
+            width: 300px;
+            left: 480px;
+            top:290px;
+            transform: rotate(90deg);
+            box-shadow: 0 0 10px #E3E3E3,0 0 40px #E3E3E3,0 0  80px #E3E3E3;
+            border-radius: 10px;
+
+
+            animation-name: animate5;
+            animation-duration: 2.5s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+
+        @keyframes animate5 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                box-shadow: 0 0 2px #E3E3E3,0 0 10px #E3E3E3,0 0  15px #E3E3E3;
+            }
+
+            30%
+            {
+                opacity: 0;
+                visibility: hidden;
+                box-shadow:none;
+            }
+
+            60%
+            {
+                opacity: 0.8;
+                visibility: visible;
+                box-shadow: 0 0 2px #E3E3E3,0 0 10px #E3E3E3,0 0  15px #E3E3E3;
+            }
+
+            80%
+            {
+                box-shadow: none;
+            }
+
+            95%
+            {
+                box-shadow: 0 0 10px #E3E3E3,0 0 40px #E3E3E3,0 0  80px #E3E3E3;
+            }
+
+        }
+
+
+
+        .content
+        {
+            position: absolute;
+            color: #E3E3E3;
+            left: 300px;
+            top:135px;
+
+            font-family: Consolas;
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight:bold;
+            letter-spacing: 4px;
+
+            animation-name: animate3;
+            animation-duration: 4.5s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+        .content span
+        {
+            color: #CC2D21;
+        }
+
+        @keyframes animate3 {
+            0%
+            {
+                opacity: 0;
+                visibility: visible;
+                top:200px;
+                left: 450px;
+            }
+
+            25%
+            {
+                opacity: 0;
+                visibility: hidden;
+                top:200px;
+                left:350px ;
+            }
+            30%
+            {
+                opacity: 0.4;
+                visibility: visible;
+            }
+            40%
+            {
+                opacity: 0.7;
+                visibility: visible;
+            }
+
+            50%
+            {
+                opacity: 1;
+                visibility: visible;
+                top:200px;
+                left:300px ;
+            }
+
+            75%
+            {
+                top:160px;
+                left:300px ;
+            }
+
+            90%
+            {
+                top:135px;
+                left:300px ;
+            }
+        }
+
+        .subcontent
+        {
+            position: absolute;
+            color:#32343A;
+            top:290px;
+            left: 300px;
+            font-family:Verdana;
+            font-size: 25px;
+            font-weight: 650;
+            line-height: 40px;
+
+            animation-name: animate4;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+
+        }
+
+        @keyframes animate4 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                top:200px;
+            }
+            20%
+            {
+                opacity: 0;
+                visibility: hidden;
+                top:210px;
+            }
+
+            50%
+            {
+                opacity: 0;
+                visibility: hidden;
+                top:230px;
+            }
+
+            70%
+            {
+                opacity: 0.6;
+                visibility: visible;
+                top: 260px;
+            }
+
+            80%
+            {
+                opacity: 0.8;
+                visibility: visible;
+            }
+        }
+
+
+        .list
+        {
+
+            position: absolute;
+            top:40px;
+            left: 955px;
+
+        }
+         ul
+        {
+            display: flex;
+        }
+
+         ul li
+        {
+            padding-right: 35px;
+            list-style: none;
+
+            transition: 1s;
+        }
+
+
+
+
+        ul li a
+        {
+            text-decoration: none;
+            font-family: Calibri;
+            font-weight: bold;
+            font-size: 20px;
+            color: #E3E3E3;
+            letter-spacing: 1px;
+            padding: 2px 8px;
+            transition: color 1s;
+        }
+
+        ul li a:visited,ul li a:active
+        {
+            text-decoration: none;
+        }
+
+        ul li a:hover
+        {
+            color: #CC2D21;
+            text-decoration: underline solid #E3E3E3;
+            text-underline-offset: 15px;
+        }
+
+        .partition3
+        {
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: #CC2D21;
+            border-radius: 10px;
+
+            top:43px;
+            box-shadow: 0 0 10px #CC2D21,0 0 40px #CC2D21,0 0  80px #CC2D21;
+        }
+
+        .partition4
+        {
+            position: absolute;
+            width: 20px;
+            height: 3px;
+            background: #E3E3E3;
+            border-radius: 10px;
+
+            top:33px;
+            box-shadow: 0 0 10px #E3E3E3,0 0 40px #E3E3E3,0 0  80px #E3E3E3;
+            animation-name: animate7;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-delay: 5s;
+        }
+
+        .partition5
+        {
+            position: absolute;
+            width: 20px;
+            height: 3px;
+            background: #E3E3E3;
+            border-radius: 10px;
+
+            top:53px;
+            box-shadow: 0 0 10px #E3E3E3,0 0 40px #E3E3E3,0 0  80px #E3E3E3;
+
+
+            animation-name: animate7;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-delay: 5s;
+        }
+
+        .partition6 {
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background: #CC2D21;
+            border-radius: 10px;
+            top:43px;
+            left: 200px;
+
+            box-shadow: 0 0 20px #CC2D21,0 0 60px  #CC2D21,0 0  120px #CC2D21;
+            animation-name: animate8;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-delay: 5s;
+        }
+        @keyframes animate8 {
+            0%
+            {
+                opacity: 0.4;
+                box-shadow: 0 0 2px #CC2D21,0 0 10px #CC2D21,0 0  15px #CC2D21;
+            }
+            30%
+            {
+                box-shadow:none;
+                opacity: 0.7;
+            }
+
+            60%
+            {
+                box-shadow: 0 0 2px #CC2D21,0 0 10px #CC2D21,0 0  15px #CC2D21;
+                opacity: 0.5;
+            }
+
+            80%
+            {
+                box-shadow: none;
+            }
+            95%
+            {
+                box-shadow: 0 0 10px #CC2D21,0 0 40px #CC2D21,0 0  80px #CC2D21;
+            }
+
+        }
+
+
+        .partition7
+        {
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: #E3E3E3;
+            border-radius: 10px;
+
+            left: 1240px;
+            top:520px;
+            box-shadow: 0 0 10px #E3E3E3,0 0 40px #E3E3E3,0 0  80px #E3E3E3;
+            animation-name: animate7;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-delay: 5s;
+        }
+
+        .partition8
+        {
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background: #CC2D21;
+            border-radius: 10px;
+
+            left: 1200px;
+            top:530px;
+            box-shadow: 0 0 10px #CC2D21,0 0 40px #CC2D21,0 0  80px #CC2D21;
+
+        }
+
+        .partition9
+        {
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: #E3E3E3;
+            border-radius: 10px;
+
+            left: 1240px;
+            top:540px;
+            box-shadow: 0 0 10px #E3E3E3,0 0 40px #E3E3E3,0 0  80px #E3E3E3;
+            animation-name: animate7;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-delay: 5s;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="heading">
+    G
+</div>
+<div class="heading2">
+    RAVITAS
+</div>
+<div class="list">
+    <ul>
+        <li><a href="gravitas_4.html">ISRO</a></li>
+        <li><a href="gravitas_2.html">NASA</a></li>
+        <li><a href="gravitas_3.html">SPACE X</a></li>
+    </ul>
+</div>
+<div class="imgbox">
+    <img src="gravitas.jpg">
+</div>
+
+<div class="partition">
+
+</div>
+
+
+<div class="partition2">
+
+</div>
+
+<div class="partition3"></div>
+<div class="partition4"></div>
+<div class="partition5"></div>
+<div class="partition6"></div>
+<div class="partition7"></div>
+<div class="partition8"></div>
+<div class="partition9"></div>
+<div class="content">
+    to <span>mars</span> &<br>
+    beyond
+</div>
+
+<div class="subcontent">
+    <p>let's see,what<br>different space org. <br>doing to reach at the<br>mars & beyond it</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NASA</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            background:#050922;
+        }
+        img
+        {
+            width: 500px;
+            height: 500px;
+        }
+        .imgbox
+        {
+            position: absolute;
+            top:60px;
+            left: 180px;
+            box-sizing: border-box;
+
+        }
+
+        .partition
+        {
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            background: #E3E3E3;
+            top:165px;
+            left: 600px;
+            transform: rotate(90deg);
+            box-shadow: 0 0 10px #E3E3E3,0 0 40px #E3E3E3,0 0  80px #E3E3E3;
+            border-radius: 10px;
+
+            animation-name: animate6;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+        }
+
+
+        @keyframes animate6 {
+            0%
+            {
+                opacity: 0.1;
+                box-shadow: 0 0 2px #E3E3E3,0 0 10px #E3E3E3,0 0  15px #E3E3E3;
+            }
+            30%
+            {
+                box-shadow:none;
+                opacity: 0.3;
+            }
+
+            60%
+            {
+                box-shadow: 0 0 2px #E3E3E3,0 0 10px #E3E3E3,0 0  15px #E3E3E3;
+                opacity: 0.5;
+            }
+
+            80%
+            {
+                box-shadow: none;
+            }
+            95%
+            {
+                box-shadow: 0 0 10px #E3E3E3,0 0 40px #E3E3E3,0 0  80px #E3E3E3;
+            }
+        }
+        .heading
+        {
+            color: #ea4256;
+            position: absolute;
+            top:150px;
+            left: 650px;
+            font-family: Verdana;
+            font-size: 25px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+
+
+            animation-name: animate1;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+
+        @keyframes animate1 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                left: 610px;
+            }
+
+            25%
+            {
+                opacity: 0.25;
+                visibility: visible;
+                left: 620px;
+            }
+
+            50%
+            {
+                opacity: 0.5;
+                visibility: visible;
+                left: 630px;
+            }
+
+            75%
+            {
+                opacity: 0.75;
+                visibility: visible;
+                left: 640px;
+            }
+            100%
+            {
+                opacity: 1;
+                visibility: visible;
+                left: 650px;
+            }
+        }
+
+        .content
+        {
+            position: absolute;
+            color: #E3E3E3;
+            top:240px;
+            left: 650px;
+
+            font-weight: bold;
+            font-family: Verdana;
+            font-size: 18px;
+            line-height: 40px;
+
+            animation-name: animate2;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+
+        }
+
+        @keyframes animate2 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                left: 610px;
+            }
+
+            25%
+            {
+                opacity: 0.25;
+                visibility: visible;
+                left: 620px;
+            }
+
+            50%
+            {
+                opacity: 0.5;
+                visibility: visible;
+                left: 630px;
+            }
+
+            75%
+            {
+                opacity: 0.75;
+                visibility: visible;
+                left: 640px;
+            }
+            100%
+            {
+                opacity: 1;
+                visibility: visible;
+                left: 650px;
+            }
+        }
+
+
+
+        .partition2
+        {
+            position: absolute;
+            width: 170px;
+            height: 4px;
+            top:320px;
+            background: #ea4256;
+            transform: rotate(90deg);
+            left: 530px;
+            box-shadow: 0 0 10px #ea4256,0 0 40px #ea4256,0 0  80px #ea4256;
+            border-radius: 10px;
+
+            animation-name: animate5;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+        }
+        @keyframes animate5 {
+            0%
+            {
+                box-shadow: 0 0 2px #ea4256,0 0 10px #ea4256,0 0  15px #ea4256;
+                opacity: 0.1;
+            }
+
+            30%
+            {
+                box-shadow:none;
+                opacity: 0.3;
+            }
+
+            60%
+            {
+                box-shadow: 0 0 2px #ea4256,0 0 10px #ea4256,0 0  15px #ea4256;
+                opacity: 0.5;
+            }
+
+            80%
+            {
+                box-shadow: none;
+            }
+            95%
+            {
+                box-shadow: 0 0 10px #ea4256,0 0 40px #ea4256,0 0  80px #ea4256;
+            }
+        }
+
+        .title
+        {
+            position: absolute;
+            color: #E3E3E3;
+            top:120px;
+            left: 55px;
+            font-size: 18em;
+            letter-spacing: 82px;
+            opacity: 0.08;
+            font-family: Verdana;
+            font-weight: bold;
+
+            animation-name: animate3;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+
+        }
+
+        @keyframes animate3 {
+
+            0%
+            {
+                opacity: 0.01;
+            }
+            25%
+            {
+                opacity: 0.02;
+            }
+
+            50%
+            {
+                opacity: 0.03;
+            }
+            75%
+            {
+                opacity: 0.06 ;
+            }
+        }
+
+
+        .square1
+        {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            background: #ea4256;
+
+            top:40px;
+            left: 40px;
+
+            animation-name: animate4;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes animate4 {
+            0%,50%
+            {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        .square2
+        {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            background: transparent;
+
+            top:60px;
+            left: 60px;
+
+            box-sizing: border-box;
+            border:2px solid #E3E3E3;
+
+        }
+
+        .square3
+        {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            background: #ea4256;
+
+            top:550px;
+            left: 1200px;
+
+
+        }
+
+        .square4
+        {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            background: transparent;
+            box-sizing: border-box;
+            border:2px solid #E3E3E3;
+
+            top:530px;
+            left: 1180px;
+
+            animation-name: animate4;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="imgbox">
+    <img src="nasa.jpg">
+</div>
+
+<div class="partition"></div>
+<div class="partition2"></div>
+<div class="heading">
+    The mars 2020 rover
+</div>
+
+<div class="content">
+    <p>This rover mission is a part of NASA'S <br>mars term-term exploration program.<br>
+
+    The mission is timed for a launch<br> opportunity b/n july 17 - Aug 5,2020.</p>
+</div>
+
+<div class="title">
+    NASA
+</div>
+<div class="square1"></div>
+<div class="square2"></div>
+<div class="square3"></div>
+<div class="square4"></div>
+</body>
+</html>

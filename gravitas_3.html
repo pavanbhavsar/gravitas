@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>spacex</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            height: 610px;
+            width: 100%;
+            background: #111824;
+        }
+        img
+        {
+            height: 300px;
+            width: 300px;
+        }
+        .imgbox
+        {
+            position: absolute;
+            top:160px;
+            left: 700px;
+        }
+        .partition1
+        {
+            position: absolute;
+            height: 4px;
+            width: 30px;
+            background: #E3E3E3;
+            top:190px;
+            left: 610px;
+            transform: rotate(90deg);
+
+            box-shadow: 0 0 10px #E3E3E3,0 0 40px #E3E3E3,0 0  80px #E3E3E3;
+            border-radius: 10px;
+
+            animation-name: animate6;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+
+        }
+        @keyframes animate6 {
+            0%
+            {
+                opacity: 0.1;
+                box-shadow: 0 0 2px #E3E3E3,0 0 10px #E3E3E3,0 0  15px #E3E3E3;
+            }
+            30%
+            {
+                box-shadow:none;
+                opacity: 0.3;
+            }
+
+            60%
+            {
+                box-shadow: 0 0 2px #E3E3E3,0 0 10px #E3E3E3,0 0  15px #E3E3E3;
+                opacity: 0.5;
+            }
+
+            80%
+            {
+                box-shadow: none;
+            }
+            95%
+            {
+                box-shadow: 0 0 10px #E3E3E3,0 0 40px #E3E3E3,0 0  80px #E3E3E3;
+            }
+        }
+
+        .heading
+        {
+            position: absolute;
+            top:175px;
+            left: 415px;
+            color: #024777;
+
+            font-family: Verdana;
+            font-size: 25px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+
+            animation-name: animate1;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+
+        @keyframes animate1 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                left: 460px;
+                letter-spacing: 1px;
+            }
+
+            25%
+            {
+                opacity: 0.25;
+                visibility: visible;
+                left: 445px;
+
+            }
+
+            50%
+            {
+                opacity: 0.5;
+                visibility: visible;
+                left: 435px;
+                letter-spacing: 2px;
+            }
+
+            75%
+            {
+                opacity: 0.75;
+                visibility: visible;
+                left: 425px;
+            }
+            100%
+            {
+                opacity: 1;
+                visibility: visible;
+                left: 415px;
+                letter-spacing: 3px;
+            }
+        }
+
+        .partition2
+        {
+            position: absolute;
+            width: 170px;
+            height: 4px;
+            background: #024777;
+            top:350px;
+            transform: rotate(90deg);
+            left: 540px;
+            border-radius: 10px;
+
+            box-shadow: 0 0 10px #024777,0 0 40px #024777,0 0  80px #024777;
+
+            animation-name: animate5;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+        @keyframes animate5 {
+            0%
+            {
+                box-shadow: 0 0 2px #024777,0 0 10px #024777,0 0  15px #024777;
+                opacity: 0.1;
+            }
+
+            30%
+            {
+                box-shadow:none;
+                opacity: 0.3;
+            }
+
+            60%
+            {
+                box-shadow: 0 0 2px #024777,0 0 10px #024777,0 0  15px #024777;
+                opacity: 0.5;
+            }
+
+            80%
+            {
+                box-shadow: none;
+            }
+            95%
+            {
+                box-shadow: 0 0 10px #024777,0 0 40px #024777,0 0  80px #024777;
+            }
+        }
+
+        .content
+        {
+            position: absolute;
+            text-align: right;
+            top: 265px;
+            left:90px;
+            color: #E3E3E3;
+
+            font-weight: bold;
+            font-family: Verdana;
+            font-size: 18px;
+            line-height: 40px;
+
+            animation-name: animate2;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+        @keyframes animate2 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                left: 130px;
+
+
+            }
+
+            25%
+            {
+                opacity: 0.25;
+                visibility: visible;
+                left: 120px;
+
+
+            }
+
+            50%
+            {
+                opacity: 0.5;
+                visibility: visible;
+                left: 110px;
+
+            }
+
+            75%
+            {
+                opacity: 0.75;
+                visibility: visible;
+                left: 100px;
+
+            }
+            100%
+            {
+                opacity: 1;
+                visibility: visible;
+                left: 90px;
+
+
+            }
+        }
+
+        .square1
+        {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #024777;
+            top:40px;
+            left: 40px;
+
+            animation-name: animate4;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes animate4 {
+            0%,50%
+            {
+                transform: rotate(360deg);
+            }
+
+        }
+
+
+
+        .square2 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            box-sizing: border-box;
+            border: 2px solid #E3E3E3;
+
+            top: 60px;
+            left: 60px;
+
+            opacity: 0.8;
+
+
+        }
+
+        .square3 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            box-sizing: border-box;
+            border: 2px solid #E3E3E3;
+
+            top: 530px;
+            left: 1180px;
+
+            opacity: 0.8;
+            animation-name: animate4;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .square4
+        {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #024777;
+            top:550px;
+            left: 1200px;
+            z-index: -1;
+
+
+        }
+
+
+
+        .title
+        {
+            position: absolute;
+            top:145px;
+            color: #E3E3E3;
+            left: 12px;
+
+            font-weight: bold;
+            font-size: 15em;
+            letter-spacing: 35px;
+            opacity: 0.05;
+            font-family: Verdana;
+
+            animation-name: animate3;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+
+        }
+        @keyframes animate3 {
+
+            0%
+            {
+                opacity: 0.01;
+            }
+
+
+            50%
+            {
+                opacity: 0.03;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="imgbox">
+    <img src="spaceX.png">
+</div>
+
+<div class="partition1"></div>
+<div class="partition2"></div>
+
+<div class="heading">
+    starship
+</div>
+
+<div class="content">
+    <p>Starship will be the world’s most<br> powerful launch vehicle ever developed.<br>
+     SpaceX has been rapidly iterating on the design<br>of Starship with orbital-flight targeted for 2020.</p>
+</div>
+
+<div class="square1"></div>
+<div class="square2"></div>
+<div class="square3"></div>
+<div class="square4"></div>
+<div class="title">
+    SPACEX
+</div>
+</body>
+</html>

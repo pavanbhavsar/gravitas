@@ -1,0 +1,1 @@
+<?php header("Location: gravitas_1.html"); ?>
