@@ -4,7 +4,7 @@ A web design which gives a brief information about the MARS MISSION of  organiza
 
 * This whole design has made from scratch.
 * No external libraries has been used.
-* key thingd used in this :- 
+* key things used in this :- 
 	
    1. Flexbox.
    2. Grid.
